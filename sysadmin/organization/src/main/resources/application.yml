@@ -17,10 +17,10 @@ spring:
   redis:
     host: ${REDIS_HOST:localhost}
     port: ${REDIS_PORT:18090}
+#    password: ${REDIS_PASSWORD:Bayenet2019!}
     lettuce:
       pool:
         max-active: 300
-    password: ${REDIS_PASSWORD:Bayenet2019!}
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:${DATASOURCE_DBTYPE:mysql}://${DATASOURCE_HOST:localhost}:${DATASOURCE_PORT:18091}/sc_admin?characterEncoding=UTF-8&useUnicode=true&useSSL=false

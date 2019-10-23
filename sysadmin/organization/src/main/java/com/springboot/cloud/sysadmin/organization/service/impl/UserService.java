@@ -74,7 +74,7 @@ public class UserService implements IUserService {
     }
 
     @Override
-//    @Cacheable(value = "user", key = "#root.targetClass.name+'-'+#uniqueId")
+    @Cacheable(value = "user", key = "#root.targetClass.name+'-'+#uniqueId")
     public User getByUniqueId(String uniqueId) {
         User user = userMapper.selectOne(new QueryWrapper<User>()
                 .eq("username", uniqueId)

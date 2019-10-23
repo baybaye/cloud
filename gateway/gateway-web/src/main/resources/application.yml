@@ -17,7 +17,7 @@ spring:
   redis:
     host: ${REDIS_HOST:localhost}
     port: ${REDIS_PORT:18090}
-    #password: ${REDIS_PASSWORD:}
+#    password: ${REDIS_PASSWORD:Bayenet2019!}
 
   zipkin:
     enabled: true
