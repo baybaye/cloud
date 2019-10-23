@@ -66,7 +66,7 @@ services:
     networks:
       - sc-net
     ports:
-      - 5672:5672
+      - 18092:18092
       
   zipkin-server:
     image: openzipkin/zipkin
@@ -79,8 +79,8 @@ services:
     ports:
       - 9411:9411
     environment:
-      - RABBIT_ADDRESSES=rabbitmq:5672
-      - RABBIT_MQ_PORT=5672
+      - RABBIT_ADDRESSES=rabbitmq:18092
+      - RABBIT_MQ_PORT=18092
       - RABBIT_PASSWORD=guest
       - RABBIT_USER=guest
     depends_on:

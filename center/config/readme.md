@@ -46,7 +46,7 @@ spring:
           searchPaths: /
   rabbitmq:
     host: ${RABBIT_MQ_HOST:localhost}
-    port: ${RABBIT_MQ_PORT:5672}
+    port: ${RABBIT_MQ_PORT:18092}
     username: ${RABBIT_MQ_USERNAME:guest}
     password: ${RABBIT_MQ_PASSWORD:guest}
 

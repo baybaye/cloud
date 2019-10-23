@@ -16,12 +16,12 @@ spring:
     name: admin
   rabbitmq:
     host: ${RABBIT_MQ_HOST:localhost}
-    port: ${RABBIT_MQ_PORT:5672}
+    port: ${RABBIT_MQ_PORT:18092}
     username: ${RABBIT_MQ_USERNAME:guest}
     password: ${RABBIT_MQ_PASSWORD:guest}
   redis:
     host: ${REDIS_HOST:localhost}
-    port: ${REDIS_PORT:6379}
+    port: ${REDIS_PORT:18090}
     ##password: ${REDIS_PASSWORD:}
   #spring boot admin的登陆账号和密码配置
   security:

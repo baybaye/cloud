@@ -18,18 +18,18 @@ spring:
     name: ${APP_ID}
   rabbitmq:
     host: ${RABBIT_MQ_HOST:localhost}
-    port: ${RABBIT_MQ_PORT:5672}
+    port: ${RABBIT_MQ_PORT:18092}
     username: ${RABBIT_MQ_USERNAME:guest}
     password: ${RABBIT_MQ_PASSWORD:guest}
   redis:
     host: ${REDIS_HOST:localhost}
-    port: ${REDIS_PORT:6379}
+    port: ${REDIS_PORT:18090}
     ##password: ${REDIS_PASSWORD:}
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:${DATASOURCE_DBTYPE:mysql}://${DATASOURCE_HOST:localhost}:${DATASOURCE_PORT:3306}/sc_product?characterEncoding=UTF-8&useUnicode=true&useSSL=false
+    url: jdbc:${DATASOURCE_DBTYPE:mysql}://${DATASOURCE_HOST:localhost}:${DATASOURCE_PORT:18091}/sc_product?characterEncoding=UTF-8&useUnicode=true&useSSL=false
     username: ${DATASOURCE_USERNAME:root}
-    password: ${DATASOURCE_PASSWORD:root123}
+    password: ${DATASOURCE_PASSWORD:Bayenet2018!}
 
   zipkin:
     enabled: true

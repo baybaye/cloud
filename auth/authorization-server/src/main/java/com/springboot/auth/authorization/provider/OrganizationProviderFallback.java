@@ -11,6 +11,7 @@ public class OrganizationProviderFallback implements OrganizationProvider {
 
     @Override
     public Result<User> getUserByUniqueId(String uniqueId) {
+        System.out.println("11111111111111111");
         return Result.success(new User());
     }
 

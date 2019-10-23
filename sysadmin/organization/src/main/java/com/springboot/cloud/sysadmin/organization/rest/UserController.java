@@ -64,7 +64,8 @@ public class UserController {
     @GetMapping
     public Result query(@RequestParam String uniqueId) {
         log.debug("query with username or mobile:{}", uniqueId);
-        return Result.success(userService.getByUniqueId(uniqueId));
+        User byUniqueId = userService.getByUniqueId(uniqueId);
+        return Result.success(byUniqueId);
     }
 
     @ApiOperation(value = "搜索用户", notes = "根据条件查询用户信息")

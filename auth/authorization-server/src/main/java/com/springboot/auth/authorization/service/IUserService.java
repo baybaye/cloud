@@ -13,6 +13,6 @@ public interface IUserService {
      * @param uniqueId
      * @return
      */
-    @Cacheable(value = "#id")
+//    @Cacheable(value = "#id")
     User getByUniqueId(String uniqueId);
 }

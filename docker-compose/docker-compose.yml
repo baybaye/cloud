@@ -7,11 +7,11 @@ services:
     volumes:
       - ../data/redis:/data
     environment:
-      - REDIS_PASSWORD=123456
+      - REDIS_PASSWORD=Bayenet2019!
     networks:
       - sc-net
     ports:
-      - 6379:6379
+      - 18090:18090
     env_file: .env
 
   rabbitmq:
@@ -23,7 +23,7 @@ services:
     networks:
       - sc-net
     ports:
-      - 5672:5672
+      - 18092:18092
     env_file: .env
 
   mysql:
@@ -33,12 +33,12 @@ services:
     networks:
       - sc-net
     ports:
-      - 3306:3306
+      - 18091:18091
     volumes:
       - ../data/mysql:/var/lib/mysql
     environment:
       TZ: Asia/Shanghai
-      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_ROOT_PASSWORD: Bayenet2018!
 
   mysql-init:
     image: mysql:5.7
@@ -51,7 +51,7 @@ services:
       - ../sysadmin/db:/sql/sysadmin
       - ./init-db.sh:/init-db.sh
     environment:
-      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_ROOT_PASSWORD: Bayenet2018!
 
 networks:
   sc-net:
